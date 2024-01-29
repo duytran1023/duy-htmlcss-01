@@ -343,7 +343,8 @@ a {
 
 .featured .list {
     margin-top: 70px;
-    display: flex;
+    grid-template-columns: repeat(3 , 1fr);
+    display: grid;
     gap: 30px;
 }
 

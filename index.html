@@ -99,14 +99,21 @@
 
         <!-- style -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!--PC Header -->
         <header class="fixed-header">
             <div class="content">
                 <nav class="navbar">
+                    <!-- Tablet & Moblile menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <img src="./assets/img/menu.svg" alt="" />
+                    </label>
                     <!-- Logo -->
-                    <a href="#"> <img src="./assets/img/logo.svg" alt="" /></a>
+                    <a href="#">
+                        <img class="logo" src="./assets/img/logo.svg" alt=""
+                    /></a>
                     <!-- Navigation -->
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -121,6 +128,34 @@
                         <a href="#!" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+        <!-- Tablet & Mobile Header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <a href="#"> <img src="./assets/img/logo.svg" alt="" /></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="hide-on-tablet">
+                        <a href="#!" class="">Sign in</a>
+                    </li>
+                    <li class="hide-on-tablet"><a href="#!">Sign up</a></li>
+                </ul>
             </div>
         </header>
         <main>
@@ -159,7 +194,9 @@
                         <p class="desc">
                             More than 45,000+ companies trust besnik
                         </p>
-                        <p class="desc">5 Star Ratings (2k+ Review)</p>
+                        <p class="desc hide-on-mobile">
+                            5 Star Ratings (2k+ Review)
+                        </p>
                     </div>
                     <div class="images">
                         <a href="#!">
